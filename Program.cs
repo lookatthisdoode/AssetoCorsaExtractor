@@ -14,7 +14,7 @@ namespace AssetoCorsaExtractor
         {
             try
             {
-                serialPort = new SerialPort("COM5", 115200); // Adjust COM port and baud rate as needed
+                serialPort = new SerialPort("COM5", 9600); // Adjust COM port and baud rate as needed
 
                 // Enable communication back
                 serialPort.RtsEnable = true;

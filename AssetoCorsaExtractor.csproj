@@ -5,7 +5,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>ac.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="ac.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -13,7 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Desktop\assettocorsasharedmemory-master\AssettoCorsaSharedMemory.csproj" />
+    <Reference Include="AssettoCorsaSharedMemory">
+      <HintPath>..\..\..\Desktop\New folder\assettocorsasharedmemory-master\bin\Debug\AssettoCorsaSharedMemory.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
