@@ -30,7 +30,7 @@ namespace AssetoCorsaExtractor
                 ac.Start(); // Connect to shared memory and start interval timers 
 
                 Console.WriteLine("Assetto Corsa running. Press any key to exit.");
-                Console.WriteLine("Hold Gear Up for 1 sec to reset RPMs");
+                Console.WriteLine("Hold Gear Up for 1 sec to reset RPMs ");
 
                 // Waiting for any key to close the app
                 // I guess this is what keeps it running
