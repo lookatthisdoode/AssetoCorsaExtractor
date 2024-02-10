@@ -1,12 +1,6 @@
 #include <ArduinoJson.h>
 #include <ArduinoJson.hpp>
 
-// Analog eBrake-Handbrake
-// PIN A0 to 10k pot output - Throttle Axis
-// Use with Arduino ProMicro.
-// Tested and working in DiRT RALLY + ASSETTO CORSA
-// by AMSTUDIO
-// 20.1.2017
 
 #include <Joystick.h>
 
